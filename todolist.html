@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="background">
+        <div class="overlay">
+            <footer class="footer">Designed by Pragathees</footer>
+    <div id="pad">
+    <div id="box2">
+    <div class="todoenter">
+        To-Do Here
+        
+    </div>
+    <hr>
+    <div class="here">
+        <form id="todoform">
+        <div class="task">
+             <label for="taskl">Task 1</label>
+            <input type="text" id="text" name="text">
+        <button onclick="markasdone(event,this)" class="taskbutton">Done</button>
+        <button onclick="warnnotyet(event,'task 1')" class="taskbutton1">Not yet</button><br><br>
+    </div>
+    <div class="task">
+        <label for="task2">Task 2</label>
+            <input type="text" id="text" name="text">
+            <button  onclick="markasdone(event,this)" class="taskbutton">Done</button>
+            <button type="button" onclick="warnnotyet(event,'task 2')"class="taskbutton1">Not yet</button><br><br>
+        </div>
+        <div class="task">
+            <label for="task3">Task 3</label>
+            <input type="text" id="text" name="text">
+            <button type="button" onclick="markasdone(event,this)"class="taskbutton">Done</button>
+            <button type="button" onclick="warnnotyet(event,'task 3')"class="taskbutton1">Not yet</button><br><br>
+        </div>
+            <div class="task">
+            <label for="task4">Task 4</label>
+            <input type="text" id="text" name="text">
+            <button type="button" onclick="markasdone(event,this)"class="taskbutton">Done</button>
+            <button type="button" onclick="warnnotyet(event,'task 4')"class="taskbutton1">Not yet</button><br><br>
+           </div>
+            <div class="task">
+            <label for="task5">Task 5</label>
+            <input type="text" id="text" name="text">
+            <button type="button" onclick="markasdone(event,this)"class="taskbutton">Done</button>
+           <button type="button" onclick="warnnotyet(event,'task 5')"class="taskbutton1">Not yet</button><br><br>
+        </div>
+            <button onclick="reset()" class="button">Reset</button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+<div class="reserv"><p>© 2024 ToDolist. All Rights Reserved.</p></div>
+
+    </div>
+</div>
+    <script>
+        function markasdone(event, buttonelement){
+            event.preventDefault(); 
+            console.log("Mark as done clicked");
+            const taskelement=buttonelement.closest('.task');
+            taskelement.remove();
+        }
+        function warnnotyet(event, taskname){
+            event.preventDefault(); 
+            alert(` ${taskname} is not yet completed`);
+        }
+        function reset(){
+            const form=document.getElementById('todoform');
+            form.reset();
+        }
+    </script>
+</body>
+</html>

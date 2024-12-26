@@ -1,0 +1,186 @@
+body{
+    background: radial-gradient(circle,#0084ff,#000000);
+    justify-content: center;
+    padding: 50px;
+    size: 200px;
+    background-image:'D:\todo web\pexels-polina-kovaleva-5717425.jpg ';
+    
+}
+.todoenter{
+    text-align: center;
+    font-size: large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color: #0d1b2a;
+
+    
+}
+.loginhere{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.todo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#pad{
+    padding: 100px 10px;
+}
+#box{
+    background-color: #e0e1dd;
+    display: grid;
+    border-radius: 10px;
+    border: 2px;
+    padding: 20px;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 0px 2px 10px 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    height:fit-content;  
+
+    animation: fadeIn 1s ease-in-out;
+    
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+        transform: scale(0.9); 
+    }
+    to {
+        opacity: 1; 
+        transform: scale(1); 
+    }
+}
+.button{
+    display: block;
+    margin: 20px auto;
+    font-family:Arial, Helvetica, sans-serif;
+    align-content: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+    border-width: 15px;
+    size: 20px;
+    background: radial-gradient(circle,#ffa600,#ffa600);
+  
+    width: 150px;
+    height: 30px;
+    color: #000000;
+    font-weight: bold;
+}
+.form{
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+   text-align: center;
+
+}
+.here{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+.taskbutton{
+    box-shadow:0px 0px 4px 1px rgba(0, 0, 0, 0.3) ;
+    border: none;
+    border-radius: 5px;
+    background: radial-gradient(circle,#000000,#000000);
+    color: #ffffff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.taskbutton1{
+    box-shadow:0px 0px 4px 1px rgba(0, 0, 0, 0.1) ;
+    border: none;
+    border-radius: 5px;
+  background-color: rgb(168, 168, 168);
+    color: #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 18px;
+}
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('todo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(.8);
+    filter: blur(10);
+    z-index:1;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.footer{
+    color: rgba(255, 255, 255, 0.5);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:small ;
+}
+.reserv{
+    text-align: center;
+    justify-content: center;
+    padding: 550px;
+    color: rgba(0, 0, 0, 1);
+    animation: slideUp 1s ease-in-out;
+
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(100%); /* Start above the screen */
+        opacity: 0; /* Fully transparent */
+    }
+    to {
+        transform: translateY(0); /* Original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+#box1{
+    background-color: #e0e1dd;
+    display: grid;
+    border-radius: 10px;
+    border: 2px;
+    padding: 20px;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 0px 2px 10px 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    height:fit-content;  
+
+    animation: fadeIn 1s ease-in-out;
+    
+}
+#box2{
+    background-color: #e0e1dd;
+    display: grid;
+    border-radius: 10px;
+    border: 2px;
+    padding: 20px;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 0px 2px 10px 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    height:fit-content;  
+
+    animation: slideIn 1s ease-in-out;
+    
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%); 
+        opacity: 0; 
+    }
+    to {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}

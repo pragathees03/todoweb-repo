@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="background">
+        <div class="overlay">
+    <div id="pad">
+<div id="box1">
+<div id="loginform" class="loginform" style.display=" block">
+    <div class="loginhere"><h2><center>Login Here !</center></h2></div>
+    <div class="form">
+    <table >
+    <form  onsubmit="handlelogin(event)">
+        <lable for="Username">Username </lable>
+        <input type="text" id="Username" name="username" required><br><br>
+        <label for="password">Password </label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button class="button" type="submit">Login</button>
+    </form>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function handlelogin(event){
+        event.preventDefault();
+        const Username=document.getElementById('Username').value;
+        const password=document.getElementById('password').value;
+        todolist(Username,password);
+    }
+    function todolist(Username,password){
+        if(Username=='admin' && password=='1234'){
+        window.open('todolist.html');
+        }else{
+            alert('Invalid username & Password');
+        }
+    }
+</script>
+</body>
+</html>
