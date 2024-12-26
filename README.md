@@ -13,7 +13,7 @@ This project is a simple and interactive To-Do web application designed to help 
 
 ## Files
 
-### 1. `todo.html`
+### 1. `index.html`
 
 - Entry point for the web application.
 - Contains the login form and links to stylesheets and scripts.
@@ -109,7 +109,7 @@ body {
    ```bash
    cd todoweb-repo
    ```
-3. Open `todo.html` in your browser to start the application.
+3. Open `index.html` in your browser to start the application.
 
 ## Scripts
 
