@@ -136,12 +136,12 @@ body{
 }
 @keyframes slideUp {
     from {
-        transform: translateY(100%); /* Start above the screen */
-        opacity: 0; /* Fully transparent */
+        transform: translateY(100%); 
+        opacity: 0; 
     }
     to {
-        transform: translateY(0); /* Original position */
-        opacity: 1; /* Fully visible */
+        transform: translateY(0); 
+        opacity: 1; 
     }
 }
 #box1{
